@@ -1,3 +1,6 @@
+# my Steam cookie, keep this private
+steam_cookie.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
