@@ -14,7 +14,6 @@ import urllib.request
 import urllib.parse
 import json
 import time
-import gzip
 
 ####################################################################################################################
 #****Connecting to steam cookie file for easier login and no error - PASTED FROM CLAUDE / KEPT GETTING 429 ERROR****
@@ -58,14 +57,7 @@ def get_case_price(item_name):
             data = json.loads(response.read())
         return data
     except urllib.error.HTTPError as error:
-        raw_body = error.read()
-        try:
-            body_text = gzip.decompress(raw_body).decode(errors="replace")
-        except OSError:
-            body_text = raw_body.decode(errors="replace")
-        print(f"Steam blocked this request (HTTP {error.code}).")
-        print(f"Response body: {body_text}")
-        print(f"Response headers: {dict(error.headers)}")
+        print(f"Steam blocked this request (HTTP {error.code}). Will show as error status.")
         return None
 
 def price_to_float(price_string):
