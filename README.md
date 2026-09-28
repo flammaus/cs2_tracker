@@ -12,7 +12,7 @@ Everything else, the price math, the fee calc, the buy/don't buy logic, is mine.
 
 
 
-***YOU WILL NEED TO MAKE YOUR OWN FILE TITLED:  "steam_cookie.txt " **
+** YOU WILL NEED TO MAKE YOUR OWN FILE TITLED:  "steam_cookie.txt " **
 
 STEAM_COOKIE.TXT INSTRUCTIONS:
 1. log into steamcommunity.com
