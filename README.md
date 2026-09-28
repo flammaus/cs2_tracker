@@ -9,3 +9,14 @@ Also want to be upfront, I used Claude for help in two spots since I'm still new
 - the try/except around the 429 error - Claude helped me handle it so it prints "error" instead of crashing the whole script
 
 Everything else, the price math, the fee calc, the buy/don't buy logic, is mine.
+
+
+
+***YOU WILL NEED TO MAKE YOUR OWN FILE TITLED:  "steam_cookie.txt " **
+
+STEAM_COOKIE.TXT INSTRUCTIONS:
+1. log into steamcommunity.com
+2. press F12, click Application tab
+3. Cookies > steamcommunity.com
+4. copy the value next to steamLoginSecure
+5. paste it into a file called steam_cookie.txt
